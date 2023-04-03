@@ -12,5 +12,15 @@ const field = document.getElementById('campo')
 
 // EVENTO AL CLICK
 button.addEventListener('click', function() {
-
+    createField()
 })
+
+// FUNZIONE AL CLICK
+function createField(){
+    for(let i = 1; i<=100; i++){
+        let cubo = document.createElement('div')
+        cubo.classList.add('cubo')
+        cubo.innerText = i
+        document.querySelector('#griglia').append(cubo)
+    }
+}
