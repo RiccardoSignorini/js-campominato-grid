@@ -11,12 +11,26 @@
 #campo{
     background-color: aqua;
     height: 80vh;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #griglia{
-    width: 50%;
-    height: 80%;
-    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.cubo{
+    width: calc(100%/10);
+    height: calc(100%/10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicked{
+    background-color: aquamarine;
 }
